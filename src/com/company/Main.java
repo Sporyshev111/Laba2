@@ -181,10 +181,11 @@ public class Main {
             }
             case (5):
             {
-                System.out.println("_______Задание №5_______");
+                 System.out.println("_______Задание №5_______");
                 Scanner in = new Scanner(System.in);
                 System.out.println("Введите число:");
                 int n = in.nextInt();
+                boolean yes = false;
 
                 for (int i = 10; i < 1000; i++)
                 {
@@ -201,12 +202,18 @@ public class Main {
                         if (x3 + y3 + z3 == n)
                         {
 
-
+                            yes = true;
                             System.out.println(x+"^3 + "+y+"^3 + "+z+"^3 = "+n);
+
+
                         }
 
                     }
 
+                }
+                if(yes == false)
+                {
+                    System.out.println("Нет таких комбинаций!");
                 }
                 break;
             }
