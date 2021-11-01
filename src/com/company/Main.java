@@ -47,7 +47,7 @@ public class Main {
                 b = in.nextDouble();
                 System.out.println("Введите c: ");
                 c = in.nextDouble();
-                scanner.close();
+                in.close();
                 if (a !=0 && b !=0 && c != 0) {
 
 
@@ -96,6 +96,7 @@ public class Main {
                     System.out.println("Погрешность вычисления: " + Math.abs(pogreshnost));
                     System.out.println("Хотие посчитать еще раз? да/нет");
                     String yesornot = in.next();
+                      in.close();
 
                     switch (yesornot){
                         case ("да"):
@@ -116,7 +117,7 @@ public class Main {
 
                     }
                 }
-                scanner.close();
+              
 
 
                 break;
@@ -159,6 +160,7 @@ public class Main {
                 x = in.nextDouble();
                 System.out.println("Введите  q: ");
                 q = in.nextDouble();
+                in.close();
                 s = x * x;
                 fk = 2;
                 c = 1;
@@ -186,6 +188,7 @@ public class Main {
                 System.out.println("Введите число:");
                 int n = in.nextInt();
                 boolean yes = false;
+                in.close();
 
                 for (int i = 10; i < 1000; i++)
                 {
@@ -215,6 +218,7 @@ public class Main {
                 {
                     System.out.println("Нет таких комбинаций!");
                 }
+                
                 break;
             }
             case (6):
@@ -252,10 +256,11 @@ public class Main {
                     System.out.println("Вы обманщик");
                 }
 
-                scanner.close();
+                in.close();
 break;
             }
         }
+        scanner.close();
 
         }
     }
